@@ -1,6 +1,6 @@
 {% set name = "pyjanitor" %}
-{% set version = "0.1.1" %}
-{% set sha256 = "0f8aefe5933c691843b460978f1351180b51e2c12892fdc8715d688eda9b402b" %}
+{% set version = "0.1.2" %}
+{% set sha256 = "f32297e8a412dee0edf4397182443fdbb96139466fd055c0f6f904a61ab98a8b" %}
 
 package:
   name: {{ name|lower }}
@@ -24,6 +24,7 @@ requirements:
     - python
     - pandas
     - numpy
+    - scikit-learn
 
 test:
   imports:
