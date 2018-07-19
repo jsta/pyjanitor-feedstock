@@ -22,6 +22,7 @@ requirements:
     - pandas
     - numpy
     - scikit-learn
+    - pandas-flavor
 
 test:
   imports:
