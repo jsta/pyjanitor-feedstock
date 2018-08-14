@@ -1,4 +1,4 @@
-{% set version = "0.3.2" %}
+{% set version = "0.4.0" %}
 
 package:
   name: pyjanitor
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pyjanitor/pyjanitor-{{ version }}.tar.gz
-  sha256: 9e08e4ca1af7417c25939618b771f97e1bee2a48f877dca12070dbcc3bf281c7
+  sha256: 1eedd7edc4405a2cea5de4fda7ded5ea5f63345ebf94b43f0a176489d57dc3bb
 
 build:
   noarch: python
