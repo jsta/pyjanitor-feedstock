@@ -23,6 +23,7 @@ requirements:
     - numpy
     - scikit-learn
     - pandas-flavor
+    - natsort
 
 test:
   imports:
