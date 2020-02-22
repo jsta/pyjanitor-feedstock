@@ -26,6 +26,10 @@ requirements:
     - natsort
 
 test:
+  requries:
+    - pip
+  commands:
+    - pip check
   imports:
     - janitor
 
