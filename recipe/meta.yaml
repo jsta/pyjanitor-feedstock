@@ -1,4 +1,4 @@
-{% set version = "0.20.2" %}
+{% set version = "0.20.4" %}
 
 package:
   name: pyjanitor
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pyjanitor/pyjanitor-{{ version }}.tar.gz
-  sha256: fad7596ca5efc88f3f70910efedc19709e930c346e87048596d2e18df4b7809b
+  sha256: 34718347b48590bb8176cc897a0d7905105c6d70ce4859aa78382288efbb93d9
 
 build:
   noarch: python
@@ -24,8 +24,14 @@ requirements:
     - scikit-learn
     - pandas-flavor
     - natsort
+    - requests
+    - xlrd
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - janitor
 
