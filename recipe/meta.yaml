@@ -24,6 +24,8 @@ requirements:
     - scikit-learn
     - pandas-flavor
     - natsort
+    - requests
+    - xlrd
 
 test:
   requires:
