@@ -1,4 +1,4 @@
-{% set version = "0.20.4" %}
+{% set version = "0.20.5" %}
 
 package:
   name: pyjanitor
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pyjanitor/pyjanitor-{{ version }}.tar.gz
-  sha256: 34718347b48590bb8176cc897a0d7905105c6d70ce4859aa78382288efbb93d9
+  sha256: 55e0480d848572df0267ccb52c8fe19ad0b53364a8fd70798298dece98660218
 
 build:
   noarch: python
@@ -40,7 +40,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Python implementation of the R package janitor.'
+  summary: Python implementation of the R package janitor.
   doc_url: http://pyjanitor.readthedocs.io
   dev_url: https://github.com/ericmjl/pyjanitor
 
