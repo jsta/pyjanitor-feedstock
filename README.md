@@ -5,7 +5,7 @@ Home: https://github.com/ericmjl/pyjanitor
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Python implementation of the R package janitor.
 
