@@ -9,9 +9,9 @@ source:
   sha256: cde75bd4b67baedfdcf2c354a151bceecefb5f3b6501990c8777a5575c3a3f35
 
 build:
-  noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -19,19 +19,20 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - pandas
-    - numpy
-    - scikit-learn
-    - pandas-flavor
     - natsort
+    - numpy
+    - pandas
+    - pandas-flavor
     - requests
+    - scikit-learn
+    - xarray
     - xlrd
 
 test:
-  requires:
-    - pip
-  commands:
-    - pip check
+  # requires:
+  #   - pip
+  # commands:
+  #   - pip check
   imports:
     - janitor
 
@@ -40,7 +41,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: Python implementation of the R package janitor.
+  summary: Tools for cleaning pandas DataFrames
   doc_url: http://pyjanitor.readthedocs.io
   dev_url: https://github.com/ericmjl/pyjanitor
 
