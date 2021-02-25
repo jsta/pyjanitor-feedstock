@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pyjanitor/pyjanitor-{{ version }}.tar.gz
-  sha256: cde75bd4b67baedfdcf2c354a151bceecefb5f3b6501990c8777a5575c3a3f35
+  sha256: 4735b2250c34034bb09d57b0dda1793ffc4517e1425f56d410b4946e3347fcdb
 
 build:
   number: 0
