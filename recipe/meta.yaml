@@ -1,4 +1,4 @@
-{% set version = "0.20.10" %}
+{% set version = "0.20.12" %}
 
 package:
   name: pyjanitor
@@ -19,12 +19,14 @@ requirements:
     - pip
   run:
     - python >=3.6
+    - multipledispatch
     - natsort
     - numpy
     - pandas
     - pandas-flavor
     - requests
     - scikit-learn
+    - scipy
     - xarray
     - xlrd
 
