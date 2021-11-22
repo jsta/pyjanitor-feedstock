@@ -1,12 +1,14 @@
-{% set version = "0.21.2" %}
+{% set name = "pyjanitor" %}
+{% set version = "0.22.0" %}
+
 
 package:
-  name: pyjanitor
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/pyjanitor/pyjanitor-{{ version }}.tar.gz
-  sha256: 26d9d2fdc8b4d84b50a6b0b42684d5e0f31fd3dfbde8c43103be81d24db5d95b
+  url: https://github.com/pyjanitor-devs/pyjanitor/archive/v0.22.0.tar.gz
+  sha256: 44226035abd4be56a786f745f0afbdf46902a2a1885231928d51af063340f904
 
 build:
   number: 0
@@ -21,7 +23,6 @@ requirements:
     - python >=3.6
     - multipledispatch
     - natsort
-    - numpy
     - pandas
     - pandas-flavor
     - requests
@@ -31,12 +32,13 @@ requirements:
     - xlrd
 
 test:
-  # requires:
-  #   - pip
-  # commands:
-  #   - pip check
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - janitor
+    - janitor.accessors
 
 about:
   home: https://github.com/ericmjl/pyjanitor
@@ -50,3 +52,4 @@ about:
 extra:
   recipe-maintainers:
     - ericmjl
+    - ocefpaf
