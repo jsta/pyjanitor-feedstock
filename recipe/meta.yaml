@@ -47,7 +47,7 @@ about:
   license_file: LICENSE
   summary: Tools for cleaning pandas DataFrames
   doc_url: http://pyjanitor.readthedocs.io
-  dev_url: https://github.com/ericmjl/pyjanitor
+  dev_url: https://github.com/pyjanitor-devs/pyjanitor
 
 extra:
   recipe-maintainers:
