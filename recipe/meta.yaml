@@ -41,13 +41,13 @@ test:
     - janitor.accessors
 
 about:
-  home: https://github.com/ericmjl/pyjanitor
+  home: https://github.com/pyjanitor-devs/pyjanitor
   license: MIT
   license_family: MIT
   license_file: LICENSE
   summary: Tools for cleaning pandas DataFrames
   doc_url: http://pyjanitor.readthedocs.io
-  dev_url: https://github.com/ericmjl/pyjanitor
+  dev_url: https://github.com/pyjanitor-devs/pyjanitor
 
 extra:
   recipe-maintainers:
